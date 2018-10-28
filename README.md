@@ -27,3 +27,6 @@ sao takanakahiko/template-clasp my-project
 ## License
 
 MIT &copy; [takanakahiko](github.com/takanakahiko)
+
+This template was made based on [gas-clasp-starter](github.com/howdy39/gas-clasp-starter).
+( MIT &copy; [howdy39](github.com/howdy39) )
