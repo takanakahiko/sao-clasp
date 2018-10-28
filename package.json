@@ -1,0 +1,25 @@
+{
+  "name": "template-clasp",
+  "version": "0.0.0",
+  "description": "gas clasp project template",
+  "repository": {
+    "url": "takanakahiko/template-clasp",
+    "type": "git"
+  },
+  "author": "takanakahiko <takanakahiko@gmail.com> (github.com/takanakahiko)",
+  "license": "MIT",
+  "files": [
+    "sao.js",
+    "template"
+  ],
+  "scripts": {
+    "test": "ava"
+  },
+  "dependencies": {
+    "superb": "^1.3.0"
+  },
+  "devDependencies": {
+    "ava": "^0.21.0",
+    "sao": "^0.22.1"
+  }
+}
