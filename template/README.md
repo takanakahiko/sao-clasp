@@ -8,14 +8,8 @@
 # setup GAS project
 $ clasp create --rootDir ./src
 
-# serve with hot reload at localhost:3000
+# push with hot reload
 $ <%= _.pm %> run dev
-
-# Development and build project
-$ <%= _.pm %> run build
-
-# clasp push
-$ <%= _.pm %> run push
 ```
 
 ## Configuration
