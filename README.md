@@ -12,7 +12,9 @@ yarn global add sao
 npm i -g sao
 ```
 
-### From npm
+### ~~From npm~~
+
+Currently this template is not available at npm.
 
 ```bash
 sao clasp my-project

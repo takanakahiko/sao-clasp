@@ -1,58 +1,27 @@
 {
-  "name": "gas-clasp-starter",
-  "version": "1.2.1",
-  "description": "",
+  "name": "<%= name %>",
+  "version": "1.0.0",
+  "description": "<%= description %>",
+  "author": "<%= author %>",
   "main": "index.js",
-  "scripts": {
-    "lint": "tslint --fix src/**/*.ts",
-    "test": "jest",
-    "build": "npm run lint && npm run test && rimraf dist && webpack && cpx src/appsscript.json dist",
-    "deploy": "npm run build && clasp push"
+  "scripts": {<% if(lint==='yes'){ %>
+    "lint": "tslint --fix src/**/*.ts",<% } %><% if(jest==='yes'){ %>
+    "test": "jest",<% } %>
+    "preprocess": "<% if(lint==='yes'){ %>npm run lint<% } %><% if(lint==='yes' && jest==='yes'){ %> && <% } %><% if(jest==='yes'){ %>npm run test<% } %><% if(lint==='no' && jest==='no'){ %>echo \"lint and jest are not available\"<% } %>",
+    "dev": "watch \"npm run preprocess && clasp push\" ./src",
+    "dev:local": "watch \"npm run preprocess\" ./src"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/howdy39/gas-clasp-starter.git"
-  },
-  "keywords": [
-    "gas",
-    "google-apps-script",
-    "clasp"
-  ],
-  "author": "howdy39",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/howdy39/gas-clasp-starter/issues"
-  },
-  "homepage": "https://github.com/howdy39/gas-clasp-starter#readme",
   "devDependencies": {
-    "@types/google-apps-script": "0.0.29",
-    "@types/jest": "^23.3.5",
-    "cpx": "^1.5.0",
-    "gas-webpack-plugin": "^0.3.0",
-    "jest": "^23.6.0",
-    "prettier": "^1.14.3",
-    "rimraf": "^2.6.2",
-    "ts-jest": "^23.10.4",
-    "ts-loader": "^5.2.1",
-    "tslint": "^5.11.0",
-    "tslint-config-prettier": "^1.15.0",
-    "tslint-plugin-prettier": "^2.0.0",
-    "typescript": "^3.1.3",
-    "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2"
-  },
-  "jest": {
-    "transform": {
-      "^.+\\.tsx?$": "ts-jest"
-    },
-    "testRegex": "(src/.+(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ]
+    "watch": "latest"<% if(language==='ts'){ %>,
+    "typescript": "latest",
+    "@types/google-apps-script": "latest"<% } %><% if(lint==='yes'){ %>,
+    "tslint": "latest",
+    "prettier": "latest",
+    "tslint-config-prettier": "latest",
+    "tslint-plugin-prettier":  "latest"<% } %><% if(jest==='yes'){ %>,
+    "jest": "latest",
+    "@types/jest": "latest",
+    "ts-jest": "latest"<% } %>
   }
 }

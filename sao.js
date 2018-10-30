@@ -3,30 +3,55 @@ const superb = require('superb')
 module.exports = {
   prompts: {
     name: {
-      message: 'What is the name of the new project?',
+      message: 'Project name',
       default: ':folderName:'
     },
     description: {
-      message: 'How would you descripe the new project?',
-      default: `my ${superb()} project`
+      message: 'Project description',
+      default: `My ${superb()} Google Apps Script project`
     },
-    username: {
-      message: 'What is your GitHub username?',
+    language: {
+      message: 'Choose a language type',
+      choices: [
+        {name:'TypeScript',value:'ts'},
+        {name:'JavaScript(Legacy)',value:'js'}
+      ],
+      type: 'list',
+      default: 'ts'
+    },
+    lint: {
+      message: ({language}) => `Use ts-lint`,
+      type: 'list',
+      choices: ['yes', 'no'],
+      default: 'yes',
+      when: ({language}) => language==='ts'
+    },
+    jest: {
+      message: ({language}) => 'Use ts-jest',
+      message: 'Use jest',
+      type: 'list',
+      choices: ['yes', 'no'],
+      default: 'yes',
+      when: ({language}) => language==='ts'
+    },
+    author: {
+      type: 'string',
+      message: 'Author name',
       default: ':gitUser:',
       store: true
     },
-    email: {
-      message: 'What is your GitHub email?',
-      default: ':gitEmail:',
-      store: true
-    },
-    website: {
-      message: 'The URL of your website?',
-      default({username}) {
-        return `github.com/${username}`
-      },
-      store: true
+    pm: {
+      message: 'Choose a package manager',
+      choices: ['npm', 'yarn'],
+      type: 'list',
+      default: 'npm'
     }
+  },
+  filters: {
+    'src/*.ts': 'language === "ts"',
+    'src/*.js': 'language === "js"',
+    '.tslintrc.js': 'lint === "yes"',
+    'jest.config.js': 'jest === "yes"',
   },
   move: {
     'gitignore': '.gitignore'
