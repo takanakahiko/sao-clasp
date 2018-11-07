@@ -4,10 +4,10 @@
   "description": "<%= description %>",
   "author": "<%= author %>",
   "main": "index.js",
-  "scripts": {<% if(lint==='yes'){ %>
-    "lint": "tslint --fix src/**/*.ts",<% } %><% if(jest==='yes'){ %>
+  "scripts": {<% if(lint){ %>
+    "lint": "tslint --fix src/**/*.ts",<% } %><% if(jest){ %>
     "test": "jest",<% } %>
-    "preprocess": "<% if(lint==='yes'){ %>npm run lint<% } %><% if(lint==='yes' && jest==='yes'){ %> && <% } %><% if(jest==='yes'){ %>npm run test<% } %><% if(lint==='no' && jest==='no'){ %>echo \"lint and jest are not available\"<% } %>",
+    "preprocess": "<% if(lint){ %>npm run lint<% } %><% if(lint && jest){ %> && <% } %><% if(jest){ %>npm run test<% } %><% if(lint && jest){ %>echo \"lint and jest are not available\"<% } %>",
     "dev": "watch \"npm run preprocess && clasp push\" ./src",
     "dev:local": "watch \"npm run preprocess\" ./src"
   },
@@ -15,11 +15,11 @@
   "devDependencies": {
     "watch": "latest"<% if(language==='ts'){ %>,
     "typescript": "latest",
-    "@types/google-apps-script": "latest"<% } %><% if(lint==='yes'){ %>,
+    "@types/google-apps-script": "latest"<% } %><% if(lint){ %>,
     "tslint": "latest",
     "prettier": "latest",
     "tslint-config-prettier": "latest",
-    "tslint-plugin-prettier":  "latest"<% } %><% if(jest==='yes'){ %>,
+    "tslint-plugin-prettier":  "latest"<% } %><% if(jest){ %>,
     "jest": "latest",
     "@types/jest": "latest",
     "ts-jest": "latest"<% } %>
