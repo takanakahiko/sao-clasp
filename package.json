@@ -13,7 +13,8 @@
     "template"
   ],
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "release": "release-it"
   },
   "dependencies": {
     "superb": "^1.3.0"
