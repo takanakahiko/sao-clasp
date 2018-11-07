@@ -9,7 +9,7 @@
   "author": "takanakahiko <takanakahiko@gmail.com> (github.com/takanakahiko)",
   "license": "MIT",
   "files": [
-    "sao.js",
+    "saofile.js",
     "template"
   ],
   "scripts": {
