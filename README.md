@@ -1,4 +1,4 @@
-# template-clasp
+# sao-clasp
 
 > gas clasp project template
 
@@ -12,9 +12,7 @@ yarn global add sao
 npm i -g sao
 ```
 
-### ~~From npm~~
-
-Currently this template is not available at npm.
+### From npm
 
 ```bash
 sao clasp my-project
@@ -23,7 +21,7 @@ sao clasp my-project
 ### From git
 
 ```bash
-sao takanakahiko/template-clasp my-project
+sao takanakahiko/sao-clasp my-project
 ```
 
 ## License
