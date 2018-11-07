@@ -23,5 +23,10 @@
     "ava": "^0.21.0",
     "release-it": "7.6.2",
     "sao": "^0.22.1"
-  }
+  },
+  "keywords": [
+    "sao-generator",
+    "sao",
+    "scaffolding"
+  ]
 }
