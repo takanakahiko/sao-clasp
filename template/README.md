@@ -12,7 +12,7 @@
 $ clasp create --rootDir ./src
 
 # push with hot reload
-$ <%= _.pm %> run dev
+$ <%= pm %> run dev
 ```
 
 ## Configuration
