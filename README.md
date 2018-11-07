@@ -4,7 +4,7 @@
 
 ## Usage
 
-Install [SAO](https://github.com/egoist/sao) first.
+Install [SAO](https://github.com/saojs/sao) first.
 
 ```bash
 yarn global add sao
