@@ -43,7 +43,7 @@ For bugs and feature requests, please [create an issue](https://github.com/takan
 
 ## License
 
-MIT &copy; [takanakahiko](github.com/takanakahiko)
+MIT &copy; [takanakahiko](https://github.com/takanakahiko)
 
-This template was made based on [gas-clasp-starter](github.com/howdy39/gas-clasp-starter).
-( MIT &copy; [howdy39](github.com/howdy39) )
+This template was made based on [gas-clasp-starter](https://github.com/howdy39/gas-clasp-starter).
+( MIT &copy; [howdy39](https://github.com/howdy39) )
