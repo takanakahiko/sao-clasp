@@ -42,13 +42,6 @@ module.exports = {
         type: 'confirm',
         default: true,
         when: ({language}) => language==='ts'
-      },
-      {
-        name: 'pm',
-        message: 'Choose a package manager',
-        choices: ['npm', 'yarn'],
-        type: 'list',
-        default: 'npm'
       }
     ]
   },
@@ -74,8 +67,7 @@ module.exports = {
   },
   async completed() {
     await this.gitInit()
-    console.log(this.answers.pm)
-    await this.npmInstall({ packageManager: this.answers.pm })
+    await this.npmInstall()
     this.showProjectTips()
   }
 }

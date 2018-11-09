@@ -12,7 +12,7 @@
 $ clasp create --rootDir ./src
 
 # push with hot reload
-$ <%= pm %> run dev
+$ npm run dev
 ```
 
 ## Configuration
