@@ -4,7 +4,7 @@
 [![npm](https://img.shields.io/npm/dt/sao-clasp.svg)](https://www.npmjs.com/package/sao-clasp)
 
 
-> gas clasp project template
+> gas [clasp](https://github.com/google/clasp) project template
 
 ## Usage
 
