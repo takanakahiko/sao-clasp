@@ -1,4 +1,5 @@
 const superb = require('superb')
+const moment = require('moment-timezone')
 
 module.exports = {
   prompts() {
@@ -20,6 +21,11 @@ module.exports = {
         default: this.gitUser.name
       },
       {
+        name: 'timezone',
+        message: 'Which timezone?',
+        default: moment.tz.guess(),
+      },
+      {
         name: 'language',
         message: 'Choose a language type',
         choices: [
@@ -31,14 +37,14 @@ module.exports = {
       },
       {
         name: 'lint',
-        message: 'Do you use tslint?',
+        message: 'Use tslint?',
         type: 'confirm',
         default: true,
         when: ({language}) => language==='ts'
       },
       {
         name: 'jest',
-        message: 'Use jest',
+        message: 'Use jest?',
         type: 'confirm',
         default: true,
         when: ({language}) => language==='ts'
