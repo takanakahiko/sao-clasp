@@ -16,7 +16,6 @@ module.exports = {
       },
       {
         name: 'author',
-        type: 'string',
         message: 'Author name',
         default: this.gitUser.name
       },
