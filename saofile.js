@@ -59,7 +59,8 @@ module.exports = {
           'src/*.ts': 'language === "ts"',
           'src/*.js': 'language === "js"',
           '.tslintrc.js': 'lint',
-          'jest.config.js': 'jest'
+          'jest.config.js': 'jest',
+          'src/*.spec.ts': 'jest',
         }
       },
       {
