@@ -2,6 +2,7 @@
 
 [![npm](https://img.shields.io/npm/v/sao-clasp.svg)](https://www.npmjs.com/package/sao-clasp)
 [![npm](https://img.shields.io/npm/dt/sao-clasp.svg)](https://www.npmjs.com/package/sao-clasp)
+[![dependencies Status](https://david-dm.org/takanakahiko/sao-clasp/status.svg)](https://david-dm.org/takanakahiko/sao-clasp)
 
 
 > gas [clasp](https://github.com/google/clasp) project template
