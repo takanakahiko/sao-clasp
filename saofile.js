@@ -12,7 +12,7 @@ module.exports = {
       {
         name: 'description',
         message: 'Project description',
-        default: `My ${superb()} Google Apps Script project`
+        default: `My ${superb.random()} Google Apps Script project`
       },
       {
         name: 'author',
