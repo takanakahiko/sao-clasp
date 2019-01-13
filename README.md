@@ -3,6 +3,8 @@
 [![npm](https://img.shields.io/npm/v/sao-clasp.svg)](https://www.npmjs.com/package/sao-clasp)
 [![npm](https://img.shields.io/npm/dt/sao-clasp.svg)](https://www.npmjs.com/package/sao-clasp)
 [![dependencies Status](https://david-dm.org/takanakahiko/sao-clasp/status.svg)](https://david-dm.org/takanakahiko/sao-clasp)
+[![awesome](https://raw.githubusercontent.com/sindresorhus/awesome/master/media/badge.svg)](https://github.com/saojs/awesome-sao)
+
 
 
 > gas [clasp](https://github.com/google/clasp) project template
