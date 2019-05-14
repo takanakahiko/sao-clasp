@@ -17,7 +17,7 @@
     "release": "release-it"
   },
   "dependencies": {
-    "moment-timezone": "0.5.23",
+    "moment-timezone": "0.5.25",
     "sao": "1.6.1",
     "superb": "^3.0.0"
   },
