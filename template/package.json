@@ -6,10 +6,8 @@
   "main": "index.js",
   "scripts": {<% if(lint){ %>
     "lint": "tslint --fix src/**/*.ts",<% } %><% if(jest){ %>
-    "test": "jest",<% } %>
-    "preprocess": "<% if(lint){ %>npm run lint<% } %><% if(lint && jest){ %> && <% } %><% if(jest){ %>npm run test<% } %><% if(lint && jest){ %>echo \"lint and jest are not available\"<% } %>",
-    "dev": "watch \"npm run preprocess && clasp push\" ./src",
-    "dev:local": "watch \"npm run preprocess\" ./src"
+    "test": "jest",<% } %>,
+    "dev": "clasp push -w"
   },
   "license": "MIT",
   "devDependencies": {
