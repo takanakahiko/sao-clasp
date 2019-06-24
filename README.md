@@ -11,26 +11,15 @@
 
 ## Usage
 
-Install [SAO](https://github.com/saojs/sao) first.
-
 ```bash
-yarn global add sao
-# or
-npm i -g sao
-```
-
-### From npm
-
-```bash
-sao clasp my-project
+$ npx sao clasp my-project -u
 ```
 
 ### From git
 
 ```bash
-sao takanakahiko/sao-clasp my-project
+$ npx sao takanakahiko/sao-clasp my-project -u
 ```
-
 
 ## Contributing
 
