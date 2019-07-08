@@ -5,8 +5,8 @@
   "author": "<%= author %>",
   "main": "index.js",
   "scripts": {<% if(lint){ %>
-    "lint": "tslint --fix src/**/*.ts"<% } %><% if(jest){ %>,
-    "test": "jest"<% } %>,
+    "lint": "tslint --fix src/**/*.ts",<% } %><% if(jest){ %>
+    "test": "jest",<% } %>
     "dev": "clasp push -w"
   },
   "license": "MIT",
