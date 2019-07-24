@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "ava": "2.2.0",
-    "release-it": "12.3.3"
+    "release-it": "12.3.4"
   },
   "keywords": [
     "sao-generator",
