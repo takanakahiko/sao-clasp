@@ -17,13 +17,13 @@
     "release": "release-it"
   },
   "dependencies": {
-    "moment-timezone": "0.5.26",
-    "sao": "1.6.1",
+    "moment-timezone": "0.5.27",
+    "sao": "1.7.0",
     "superb": "4.0.0"
   },
   "devDependencies": {
-    "ava": "2.3.0",
-    "release-it": "12.3.6"
+    "ava": "2.4.0",
+    "release-it": "12.4.3"
   },
   "keywords": [
     "sao-generator",
