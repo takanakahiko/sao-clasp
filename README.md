@@ -41,3 +41,5 @@ MIT &copy; [takanakahiko](https://github.com/takanakahiko)
 
 This template was made based on [gas-clasp-starter](https://github.com/howdy39/gas-clasp-starter).
 ( MIT &copy; [howdy39](https://github.com/howdy39) )
+
+
