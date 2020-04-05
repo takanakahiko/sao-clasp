@@ -22,7 +22,7 @@
     "superb": "4.0.0"
   },
   "devDependencies": {
-    "ava": "3.5.2",
+    "ava": "3.6.0",
     "release-it": "12.6.3"
   },
   "keywords": [
