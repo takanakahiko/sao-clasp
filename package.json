@@ -19,7 +19,7 @@
   "dependencies": {
     "moment-timezone": "0.5.31",
     "sao": "1.7.1",
-    "superb": "4.0.0"
+    "superb": "5.0.0"
   },
   "devDependencies": {
     "ava": "3.13.0",
